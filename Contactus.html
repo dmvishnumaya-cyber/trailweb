@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Puthuparambil Temple</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:Inter,sans-serif;
+    background:#180908;
+    color:#F7F4EC;
+}
+nav{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:94%;
+    max-width:1200px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 30px;
+    border-radius:50px;
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(212,175,55,.2);
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+.hero{
+    height:65vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.72)),
+    url("https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1800&q=80") center/cover;
+}
+.hero h1{
+    font-family:Cinzel,serif;
+    color:#D4AF37;
+    font-size:clamp(2.5rem,6vw,5rem);
+}
+.hero p{margin-top:15px;font-size:1.1rem}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 25px;
+}
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+}
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(212,175,55,.18);
+    border-radius:22px;
+    padding:35px;
+}
+h2{
+    font-family:Cinzel,serif;
+    color:#D4AF37;
+    margin-bottom:25px;
+}
+.item{
+    margin-bottom:22px;
+}
+.label{
+    color:#D4AF37;
+    font-size:.82rem;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:6px;
+}
+.value{
+    line-height:1.8;
+}
+.map img{
+    width:100%;
+    border-radius:18px;
+}
+.button{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 30px;
+    border:1px solid #D4AF37;
+    border-radius:40px;
+    color:white;
+    text-decoration:none;
+}
+footer{
+    margin-top:60px;
+    text-align:center;
+    padding:50px;
+    background:#120707;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div style="font-family:Cinzel,serif;color:#D4AF37;">Puthuparambil Temple</div>
+
+<div>
+<a href="index.html">Home</a>
+<a href="index.html#about">About</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<div>
+<h1>Contact Us</h1>
+<p>We welcome every devotee with faith and devotion.</p>
+</div>
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+
+<h2>Temple Information</h2>
+
+<div class="item">
+<div class="label">Location</div>
+<div class="value">
+Minalur, Athani,<br>
+Thrissur, Kerala, India
+</div>
+</div>
+
+<div class="item">
+<div class="label">Phone</div>
+<div class="value">+91 95670 31158</div>
+</div>
+
+<div class="item">
+<div class="label">WhatsApp</div>
+<div class="value">+91 95670 31158</div>
+</div>
+
+<div class="item">
+
+
+<div class="item">
+<div class="label">Temple Timings</div>
+<div class="value">
+Morning : 5:30 AM – 10:00 AM<br>
+Evening : 4:00 PM – 8:30 PM
+</div>
+</div>
+
+<a class="button" href="https://share.google/VtYWo9LDQb1MkJW8z" target="_blank">Open Google Maps</a>
+
+</div>
+
+<div class="card map">
+
+<h2>Find the Temple</h2>
+
+<img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?auto=format&fit=crop&w=1200&q=80" alt="Temple">
+
+<p style="margin-top:20px;line-height:1.8;">
+Puthuparambil Sree Bhadrakali Vishnumaya Temple is peacefully located in Minalur, Athani, Thrissur, Kerala, offering devotees a serene and spiritually uplifting destination that is easily accessible from Thrissur city and nearby towns. Surrounded by the beauty of Kerala's countryside, the temple welcomes devotees throughout the year to seek the divine blessings of Sree Vishnumaya Swamy and Sree Bhadrakali Devi in a sacred atmosphere filled with faith, peace, and devotion.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<h2 style="font-size:1.4rem;">Puthuparambil Sree Bhadrakali Vishnumaya Temple</h2>
+<p>Minalur, Athani, Thrissur, Kerala, India</p>
+</footer>
+
+</body>
+</html>

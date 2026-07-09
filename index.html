@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puthuparambil Sree Bhadrakali Vishnumaya Temple</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;background:#180908;color:#F7F4EC}
+nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);width:94%;max-width:1200px;background:rgba(0,0,0,.45);backdrop-filter:blur(15px);display:flex;justify-content:space-between;padding:16px 30px;border-radius:50px;border:1px solid rgba(212,175,55,.25);z-index:10}
+nav a{text-decoration:none;color:#fff;margin-left:20px}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1800&q=80') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}
+.hero h1{font:700 clamp(2.4rem,6vw,5rem) Cinzel,serif;color:#D4AF37}
+.hero p{max-width:700px;margin:20px auto}
+.btn{display:inline-block;padding:14px 30px;border:1px solid #D4AF37;color:#fff;text-decoration:none;border-radius:40px}
+section{max-width:1200px;margin:auto;padding:90px 25px}
+h2{font:600 2.4rem Cinzel,serif;color:#D4AF37;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:#24110f;border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.2)}
+.card img{width:100%;height:240px;object-fit:cover;display:block}
+.card div{padding:20px}
+.banner{width:100%;border-radius:20px;margin:25px 0}
+footer{text-align:center;padding:50px;background:#120707}
+/* ===========================
+   MOBILE OPTIMIZATION
+=========================== */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+@media (max-width:992px){
+
+    nav{
+        width:95%;
+        padding:14px 20px;
+    }
+
+    nav a{
+        margin-left:12px;
+        font-size:14px;
+    }
+
+    .hero{
+        padding:20px;
+        background-attachment:scroll;
+    }
+
+    .hero h1{
+        font-size:42px;
+        line-height:1.2;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    section{
+        padding:70px 20px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:12px;
+        padding:18px;
+        border-radius:20px;
+        top:10px;
+    }
+
+    nav div:last-child{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:14px;
+    }
+
+    nav a{
+        margin:0;
+        font-size:15px;
+    }
+
+    .hero{
+        min-height:100vh;
+        padding:25px;
+    }
+
+    .hero h1{
+        font-size:34px;
+        line-height:1.25;
+    }
+
+    .hero p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .btn{
+        display:inline-block;
+        padding:14px 28px;
+        font-size:15px;
+    }
+
+    h2{
+        font-size:34px;
+    }
+
+    h3{
+        font-size:24px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+        gap:22px;
+    }
+
+    .card img{
+        height:220px;
+    }
+
+    .banner{
+        border-radius:14px;
+    }
+
+    p{
+        font-size:15px;
+        line-height:1.9;
+        text-align:justify;
+    }
+
+    footer{
+        padding:40px 20px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    nav{
+        width:94%;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
+    .card img{
+        height:200px;
+    }
+
+    section{
+        padding:60px 18px;
+    }
+
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div style="font-family:Cinzel,serif;color:#D4AF37">Puthuparambil Temple</div>
+<div>
+<a href="#about">About</a>
+<a href="#deities">Deities</a>
+<a href="#gallery">Gallery</a>
+</div>
+</nav>
+
+<header class="hero">
+<div>
+<h1>Puthuparambil Sree Bhadrakali Vishnumaya Temple</h1>
+<p>Experience divine grace, sacred traditions, and Kerala's timeless spiritual heritage.</p>
+<a href="#about" class="btn">Explore</a>
+</div>
+</header>
+
+<section id="about">
+<h2>Temple Heritage</h2>
+<img class="banner" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80" alt="Temple">
+<p>In the sacred land of Minalur, Athani, where devotion has flourished through generations, stands the divine abode of Puthuparambil Sree Bhadrakali Vishnumaya Temple—a holy sanctuary blessed by the eternal presence of Sree Vishnumaya Swamy and Sree Bhadrakali Devi. More than a temple, it is a sacred realm where faith meets divine grace, where every prayer is offered with unwavering devotion, and where countless devotees have experienced the boundless compassion and miraculous blessings of the Divine. The powerful presence of Sree Vishnumaya Swamy, the compassionate protector of devotees, together with the fierce yet benevolent Mother Bhadrakali, fills the temple with an indescribable spiritual energy that brings peace to the mind, courage to the heart, and strength to overcome life's greatest challenges. Every sacred lamp that is lit, every bell that resonates through the temple, every chant that echoes within its holy walls, and every offering made with sincere devotion becomes a bridge between the devotee and the Divine. The fragrance of incense, the sacred rhythms of traditional rituals, and the timeless customs preserved through generations create an atmosphere where hearts surrender in prayer and souls find everlasting solace. Devotees arrive seeking divine protection, the removal of obstacles, relief from hardships, prosperity, harmony, good health, and spiritual fulfillment, returning with renewed faith after receiving the compassionate blessings of the deities. On auspicious occasions, especially during sacred poojas and festivals, the temple transforms into a radiant centre of devotion, where the divine presence is deeply felt and every moment becomes an expression of gratitude, surrender, and grace. Rooted in Kerala's rich spiritual heritage and cherished by generations of devotees, Puthuparambil Sree Bhadrakali Vishnumaya Temple continues to illuminate countless lives with divine blessings, preserving sacred traditions while inspiring every soul to walk the path of righteousness, faith, and unwavering devotion. Here, every prayer rises with hope, every blessing descends with grace, and every devotee leaves carrying the eternal light of the Divine within their heart.
+</p>
+</section>
+
+<section id="deities">
+<h2>Divine Presence</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604608672516-f1b3c41c0d44?auto=format&fit=crop&w=900&q=80" alt="">
+<div><h3>Sree Vishnumaya Swamy</h3></div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=900&q=80" alt="">
+<div><h3>Sree Bhadrakali Devi</h3></div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&w=900&q=80" alt="">
+<div><h3>Temple Pooja</h3></div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="grid">
+<img class="banner" src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1000&q=80">
+<img class="banner" src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=80">
+<img class="banner" src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1000&q=80">
+</div>
+</section>
+
+<footer>
+<h2 style="font-size:1.4rem">Puthuparambil Sree Bhadrakali Vishnumaya Temple</h2>
+<p>Minalur, Athani, Thrissur, Kerala, India</p>
+</footer>
+
+</body>
+</html>
