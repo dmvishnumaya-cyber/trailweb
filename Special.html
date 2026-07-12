@@ -3,397 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Special Poojas | Puthuparambil Sree Bhadrakali Vishnumaya Temple</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+<title>വിശേഷ പൂജകൾ | Puthuparambil Temple</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:Inter,sans-serif;
-background:#180908;
-color:#F7F4EC;
-line-height:1.8;
-}
-
-nav{
-position:fixed;
-top:20px;
-left:50%;
-transform:translateX(-50%);
-width:94%;
-max-width:1200px;
-background:rgba(0,0,0,.45);
-backdrop-filter:blur(15px);
-display:flex;
-justify-content:space-between;
-padding:16px 30px;
-border-radius:50px;
-border:1px solid rgba(212,175,55,.25);
-z-index:100;
-}
-
-nav a{
-text-decoration:none;
-color:#fff;
-margin-left:20px;
-}
-
-.hero{
-height:70vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:30px;
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
-url("https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&w=1800&q=80") center/cover;
-}
-
-.hero h1{
-font-family:Cinzel,serif;
-font-size:clamp(2.4rem,6vw,4.5rem);
-color:#D4AF37;
-margin-bottom:20px;
-}
-
-.hero p{
-max-width:750px;
-margin:auto;
-}
-
-section{
-max-width:1200px;
-margin:auto;
-padding:90px 25px;
-}
-
-h2{
-font-family:Cinzel,serif;
-font-size:2.4rem;
-color:#D4AF37;
-margin-bottom:20px;
-}
-
-.intro{
-max-width:900px;
-margin:auto;
-text-align:center;
-margin-bottom:60px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
-}
-
-.card{
-background:#24110f;
-border-radius:18px;
-overflow:hidden;
-border:1px solid rgba(212,175,55,.2);
-transition:.4s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-border-color:#D4AF37;
-}
-
-.card img{
-width:100%;
-height:250px;
-object-fit:cover;
-display:block;
-}
-
-.content{
-padding:28px;
-}
-
-.content h3{
-font-family:Cormorant Garamond,serif;
-font-size:2rem;
-color:#D4AF37;
-margin-bottom:15px;
-}
-
-.content p{
-font-size:15px;
-color:#eee;
-}
-
-.highlight{
-background:#24110f;
-border-left:4px solid #D4AF37;
-padding:35px;
-margin-top:60px;
-border-radius:14px;
-}
-
-.banner{
-width:100%;
-border-radius:20px;
-margin:40px 0;
-}
-
-footer{
-padding:45px;
-text-align:center;
-background:#120707;
-margin-top:60px;
-}
-
-img{
-max-width:100%;
-height:auto;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;background:#180908;color:#F7F4EC;line-height:1.8}
+html{scroll-behavior:smooth}
+nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);width:94%;max-width:1200px;background:rgba(0,0,0,.45);backdrop-filter:blur(15px);display:flex;justify-content:space-between;padding:16px 30px;border-radius:50px;border:1px solid rgba(212,175,55,.25);z-index:99}
+nav a{text-decoration:none;color:#fff;margin-left:20px}
+.hero{height:70vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&w=1800&q=80') center/cover;display:flex;justify-content:center;align-items:center;text-align:center;padding:30px}
+.hero h1{font:700 clamp(2.2rem,5vw,4rem) Cinzel,serif;color:#D4AF37}
+.eng{display:block;color:#d8c28c;font-size:.55em;font-style:italic;margin-top:8px}
+.mal{font-size:18px}
+.engp{font-size:15px;color:#cdbf9d;margin-top:8px}
+section{max-width:1200px;margin:auto;padding:90px 25px}
+h2{font:600 2.3rem Cinzel,serif;color:#D4AF37;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
+.card{background:#24110f;border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.2)}
+.card img{width:100%;height:220px;object-fit:cover}
+.content{padding:22px}
+.content h3{color:#D4AF37;font-size:1.5rem;margin-bottom:12px}
+.banner{width:100%;border-radius:18px;margin:35px 0}
+.highlight{background:#24110f;padding:30px;border-left:4px solid #D4AF37;border-radius:14px}
+footer{text-align:center;padding:45px;background:#120707}
 @media(max-width:768px){
-
-nav{
-flex-direction:column;
-gap:12px;
-padding:18px;
-border-radius:20px;
+nav{flex-direction:column;gap:10px;border-radius:20px;padding:18px}
+nav div:last-child{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+nav a{margin:0}
+.grid{grid-template-columns:1fr}
+.hero{height:80vh}
 }
-
-nav div:last-child{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
-}
-
-nav a{
-margin:0;
-}
-
-.hero{
-height:80vh;
-}
-
-.hero h1{
-font-size:34px;
-}
-
-section{
-padding:70px 20px;
-}
-
-h2{
-font-size:32px;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-.card img{
-height:220px;
-}
-
-}
-
 </style>
-
 </head>
-
 <body>
-
 <nav>
-
-<div style="font-family:Cinzel,serif;color:#D4AF37">
-Puthuparambil Temple
-</div>
-
+<div style="font-family:Cinzel,serif;color:#D4AF37">Puthuparambil Temple</div>
 <div>
 <a href="index.html">Home</a>
 <a href="special-poojas.html">Special Poojas</a>
 <a href="Contactus.html">Contact</a>
 </div>
-
 </nav>
 
 <header class="hero">
-
 <div>
-
-<h1>Special Poojas</h1>
-
-<p>
-Participate in the sacred rituals of Puthuparambil Sree Bhadrakali Vishnumaya Temple and seek divine blessings for prosperity, protection, peace, and spiritual well-being.
-</p>
-
+<h1>വിശേഷ പൂജകൾ<span class="eng">Special Poojas</span></h1>
+<p class="mal">ഭക്തിയോടെ സമർപ്പിക്കുന്ന ഓരോ വഴിപാടും ദൈവാനുഗ്രഹത്തിലേക്കുള്ള വിശുദ്ധ യാത്രയാണ്.</p>
+<p class="engp">Every sacred offering is a spiritual journey towards divine blessings.</p>
 </div>
-
 </header>
 
 <section>
+<h2>വിശേഷ പൂജകൾ<span class="eng">Sacred Offerings</span></h2>
 
-<div class="intro">
+<p class="mal">പുതുപ്പറമ്പിൽ ശ്രീ ഭദ്രകാളി വിഷ്ണുമായ ക്ഷേത്രത്തിൽ കേരള താന്ത്രിക ആചാരപ്രകാരം എല്ലാ വിശേഷ പൂജകളും ഭക്തിപൂർവ്വം നടത്തപ്പെടുന്നു.</p>
+<p class="engp">All special poojas are performed according to the sacred Tantric traditions of Kerala with utmost devotion.</p>
 
-<h2>Sacred Offerings</h2>
-
-<p>
-
-Every pooja performed at Puthuparambil Sree Bhadrakali Vishnumaya Temple is conducted according to Kerala's ancient Tantric traditions with utmost devotion and spiritual purity. Devotees participate in these sacred offerings to receive divine grace, overcome life's obstacles, attain prosperity, experience healing, and strengthen their spiritual connection with Sree Vishnumaya Swamy and Sree Bhadrakali Devi.
-
-</p>
-
-</div>
+<img class="banner" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80">
 
 <div class="grid">
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?auto=format&fit=crop&w=1000&q=80">
-
+<img src="pooja1.jpeg?auto=format&fit=crop&w=900&q=80">
 <div class="content">
-
-<h3>Amavasya Mahashakthi Pooja</h3>
-
-<p>
-
-Performed on every Amavasya, this highly powerful pooja invokes the blessings of the Divine Mother for removing doshas, overcoming obstacles, ensuring family prosperity, spiritual protection, and success in every aspect of life.
-
-</p>
-
-</div>
-
-</div>
+<h3>അമാവാസി മഹാശക്തി പൂജ<span class="eng">Amavasya Mahashakthi Pooja</span></h3>
+<p class="mal">സകല ദോഷങ്ങളും, തൊഴിൽ തടസ്സങ്ങളും, കുടുംബപ്രശ്നങ്ങളും മാറി ഐശ്വര്യം ലഭിക്കാനായി നടത്തുന്ന അതിശക്തിയേറിയ പൂജ.</p>
+<p class="engp">A powerful New Moon worship for prosperity, protection and removal of obstacles.</p>
+</div></div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=1000&q=80">
-
+<img src="event (2).jpeg?auto=format&fit=crop&w=900&q=80">
 <div class="content">
-
-<h3>Vishnumaya Special Pooja</h3>
-
-<p>
-
-A sacred ritual dedicated to Sree Vishnumaya Swamy seeking divine protection, victory over enemies, relief from difficulties, success in business, peaceful family life, and overall well-being.
-
-</p>
-
-</div>
-
-</div>
+<h3>വിഷ്ണുമായ സ്വാമി പ്രത്യേക പൂജ<span class="eng">Special Pooja for Sree Vishnumaya Swamy</span></h3>
+<p class="mal">ജീവിതവിജയം, ശത്രുദോഷ നിവാരണം, കുടുംബസൗഖ്യം എന്നിവയ്ക്കായി സമർപ്പിക്കുന്ന വിശേഷ പൂജ.</p>
+<p class="engp">Performed for protection, success, family well-being and victory over obstacles.</p>
+</div></div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=80">
-
+<img src="https://images.unsplash.com/photo-1604608672516-f1b3c41c0d44?auto=format&fit=crop&w=900&q=80">
 <div class="content">
-
-<h3>Bhadrakali Devi Pooja</h3>
-
-<p>
-
-A powerful worship offered to Sree Bhadrakali Devi for courage, protection from evil influences, good health, mental strength, and divine guidance throughout life's journey.
-
-</p>
-
-</div>
-
-</div>
+<h3>ഭദ്രകാളി ദേവി പൂജ<span class="eng">Bhadrakali Devi Pooja</span></h3>
+<p class="mal">ധൈര്യം, ആരോഗ്യസൗഖ്യം, ദൈവിക സംരക്ഷണം എന്നിവയ്ക്കായി നടത്തുന്ന വിശുദ്ധ ആരാധന.</p>
+<p class="engp">Sacred worship seeking courage, health and divine protection.</p>
+</div></div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1000&q=80">
-
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=900&q=80">
 <div class="content">
-
-<h3>Archana & Deepam</h3>
-
-<p>
-
-Devotees may offer Archana and sacred lamps to express gratitude, pray for fulfilled wishes, seek peace of mind, and receive the everlasting blessings of the Divine.
-
-</p>
-
-</div>
-
-</div>
+<h3>അർച്ചന<span class="eng">Archana</span></h3>
+<p class="mal">ഭക്തരുടെ പേരിലും നാളിലും നടത്തുന്ന ദൈനംദിന വിശുദ്ധ അർച്ചന.</p>
+<p class="engp">Daily sacred Archana offered in the devotee's name and birth star.</p>
+</div></div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&w=1000&q=80">
-
+<img src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&w=900&q=80">
 <div class="content">
-
-<h3>Special Festival Poojas</h3>
-
-<p>
-
-During annual festivals and auspicious occasions, elaborate poojas, traditional rituals, and devotional ceremonies are conducted with great grandeur, attracting devotees from across Kerala.
-
-</p>
-
-</div>
-
-</div>
+<h3>നെയ്യ് വിളക്ക് വഴിപാട്<span class="eng">Ghee Lamp Offering</span></h3>
+<p class="mal">ജീവിതത്തിൽ പ്രകാശവും സമാധാനവും നിറയാൻ സമർപ്പിക്കുന്ന വിശുദ്ധ ദീപാർച്ചന.</p>
+<p class="engp">A sacred lamp offering symbolizing light, peace and divine grace.</p>
+</div></div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1604608672516-f1b3c41c0d44?auto=format&fit=crop&w=1000&q=80">
-
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=900&q=80">
 <div class="content">
-
-<h3>Personal Sankalpam Pooja</h3>
-
-<p>
-
-Devotees may offer special poojas in their own names and family names seeking blessings for marriage, education, career, health, childbirth, financial growth, and overall happiness.
-
-</p>
+<h3>ഉത്സവ വിശേഷ പൂജകൾ<span class="eng">Festival Special Poojas</span></h3>
+<p class="mal">വാർഷിക മഹോത്സവത്തോടനുബന്ധിച്ച് വിശേഷ താന്ത്രിക പൂജകളും ചടങ്ങുകളും നടത്തപ്പെടുന്നു.</p>
+<p class="engp">Special rituals and ceremonies performed during the annual temple festival.</p>
+</div></div>
 
 </div>
 
-</div>
-
-</div>
-
-<img class="banner" src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1600&q=80">
-
-<div class="highlight">
-
-<h2>Book Your Offering</h2>
-
-<p>
-
-Devotees wishing to participate in any special pooja may contact the temple office in advance for booking details, pooja timings, offerings, and special festival schedules. Every offering made with sincere devotion becomes a sacred prayer seeking the eternal blessings of Sree Vishnumaya Swamy and Sree Bhadrakali Devi.
-
-</p>
-
+<div class="highlight" style="margin-top:50px">
+<h2 style="font-size:2rem">പൂജ ബുക്കിംഗ്<span class="eng">Pooja Booking</span></h2>
+<p class="mal">വിശേഷ പൂജകളിൽ പങ്കെടുക്കുന്നതിനും വഴിപാടുകൾ സമർപ്പിക്കുന്നതിനുമായി ക്ഷേത്ര ഓഫീസുമായി ബന്ധപ്പെടാവുന്നതാണ്.</p>
+<p class="engp">Please contact the temple office to book poojas and submit offerings.</p>
 </div>
 
 </section>
 
 <footer>
-
-<h2 style="font-size:1.4rem">
-Puthuparambil Sree Bhadrakali Vishnumaya Temple
-</h2>
-
-<p>
-Minalur, Athani, Thrissur, Kerala
-</p>
-
+<h2 style="font-size:1.4rem">പുതുപ്പറമ്പിൽ ശ്രീ ഭദ്രകാളി വിഷ്ണുമായ ക്ഷേത്രം<br><span class="eng">Puthuparambil Sree Bhadrakali Vishnumaya Temple</span></h2>
+<p>മിണാലൂർ, അത്താണി, തൃശൂർ, കേരളം<br><span class="eng">Minalur, Athani, Thrissur, Kerala</span></p>
 </footer>
-
 </body>
 </html>
