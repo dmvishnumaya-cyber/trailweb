@@ -168,9 +168,27 @@ img{
     }
 
 }
+
+/* PREMIUM DIVINE LOADER */
+body.reveal{animation:reveal 1s ease forwards}
+@keyframes reveal{from{opacity:.2;filter:blur(8px)}to{opacity:1;filter:blur(0)}}
+#loader{position:fixed;inset:0;background:radial-gradient(circle,#2d130f,#180908 75%);display:flex;align-items:center;justify-content:center;z-index:999999;transition:opacity 1.5s ease,visibility 1.5s ease}
+#loader.hide{opacity:0;visibility:hidden}
+.loader-wrap{position:relative;width:240px;height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring,.ring2{position:absolute;border-radius:50%;border:2px solid rgba(212,175,55,.5)}
+.ring{width:180px;height:180px;border-top-color:#ffe38a;animation:spin 8s linear infinite}
+.ring2{width:150px;height:150px;border-bottom-color:#c89a00;animation:spinR 5s linear infinite}
+.om{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:88px;color:#D4AF37;text-shadow:0 0 20px #d4af37;animation:pulse 2s infinite;z-index:2}
+.loader-title{margin-top:170px;font-family:Cinzel,serif;color:#D4AF37}
+.loader-sub{font-size:14px;color:#f5e4aa;animation:blink 1.5s infinite alternate}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes spinR{to{transform:rotate(-360deg)}}@keyframes pulse{50%{transform:translate(-50%,-50%) scale(1.08)}}@keyframes blink{from{opacity:.5}to{opacity:1}}
+
 </style>
 </head>
 <body>
+
+<div id="loader"><div class="loader-wrap"><div class="ring"></div><div class="ring2"></div><div class="om">ॐ</div><div class="loader-title">Puthuparambil Temple</div><div class="loader-sub">Loading Divine Blessings...</div></div></div>
+
 
 <nav>
 <div style="font-family:Cinzel,serif;color:#D4AF37">Puthuparambil Temple</div>
@@ -216,6 +234,34 @@ img{
 </div>
 </section>
 
+
+<section id="events">
+<h2>Upcoming Event</h2>
+<div class="card" style="padding:30px">
+<h3 style="color:#D4AF37">🪔 അമാവാസി മഹാശക്തി പൂജ<br><span style="font-size:18px;color:#fff">Amavasi Mahashakthi Pooja</span></h3>
+<p><strong>📅 14 July 2026 (Tuesday) | പുണർതം നാൾ | 🕓 From 4:00 PM</strong></p>
+<hr style="margin:20px 0;border-color:rgba(212,175,55,.3)">
+<br>
+പുതുപ്പറമ്പിൽ ശ്രീ ഭദ്രകാളി വിഷ്ണുമായ ക്ഷേത്രത്തിൽ നടക്കുന്ന അമാവാസി മഹാശക്തി പൂജ സകല ദോഷങ്ങളും, തൊഴിൽ തടസങ്ങളും നീങ്ങി ജീവിതത്തിൽ എല്ലാ സൗഭാഗ്യങ്ങളും ഐശ്വര്യങ്ങളും ലഭിക്കാനായി നടത്തുന്ന ശക്തിയേറിയ പൂജയാണ്.</p>
+<p>🕓 4:00 PM – സമർപ്പണം, കളം കയ്യേറ്റൽ<br>
+🪔 6:00 PM – ദീപാരാധന (ഇരു കാവുകളിലും)<br>
+🎵 7:00 PM – കളം പാട്ട്<br>
+🔥 8:00 PM – നൃത്തം, തുടർന്ന് വിഷ്ണുമായ സ്വാമിയുടെ കല്പന<br>
+🥥 9:00 PM – അന്നദാനം</p>
+<p>എല്ലാ ഭക്തജനങ്ങളെയും ഈ മഹാശക്തി പൂജയിൽ ഭക്തിപൂർവ്വം പങ്കുചേരുവാൻ ഹൃദയംപൂർവ്വം ക്ഷണിക്കുന്നു.</p>
+<hr style="margin:20px 0;border-color:rgba(212,175,55,.3)">
+<br>
+Puthuparambil Sree Bhadrakali Vishnumaya Temple warmly invites all devotees to the sacred <b>Amavasi Mahashakthi Pooja</b>, a powerful ritual performed to remove negative influences, overcome obstacles in life and career, and receive divine blessings for prosperity, peace, health and spiritual well-being.</p>
+<p><b>Programme</b><br>
+4:00 PM – Offerings & Kalam Preparation<br>
+6:00 PM – Deeparadhana at both Kaavus<br>
+7:00 PM – Traditional Kalam Pattu<br>
+8:00 PM – Sacred Dance followed by the Divine Oracle of Sree Vishnumaya Swamy<br>
+9:00 PM – Annadanam</p>
+<p>📞 +91 96454 01305 &nbsp;&nbsp; 📞 +91 98467 39869</p>
+</div>
+</section>
+
 <section id="gallery">
 <h2>Gallery</h2>
 <div class="grid">
@@ -231,5 +277,18 @@ img{
 <p>+91 95670 31158</p>
 </footer>
 
+
+<script>
+window.addEventListener("load",()=>{
+ const start=Date.now();
+ const min=4000;
+ const finish=()=>{
+ document.getElementById("loader").classList.add("hide");
+ document.body.classList.add("reveal");
+ };
+ const wait=Math.max(0,min-(Date.now()-start));
+ setTimeout(finish,wait);
+});
+</script>
 </body>
 </html>
