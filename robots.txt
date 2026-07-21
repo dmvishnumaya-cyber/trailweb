@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://puthuparambiltemple.com/sitemap.xml
